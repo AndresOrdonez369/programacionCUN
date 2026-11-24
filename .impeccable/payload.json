@@ -1,0 +1,56 @@
+{
+  "title": "Elige el mundo visual del sitio",
+  "question": "La tirada asignó la Hoja de sprites. Quédate con ella, toma la alternativa o vuelve a tirar.",
+  "options": [
+    {
+      "id": "assigned", "kind": "assigned", "label": "Hoja de sprites", "kicker": "THE ROLL",
+      "lineage": "Sprite sheets y paletas indexadas de la era de 8 y 16 bits",
+      "thesis": "El curso es una animación de 9 cuadros: el Módulo 0 y las 8 sesiones son frames numerados de una misma hoja.",
+      "palette": ["#1B1A2E", "#F4F1E8", "#FF5D3A", "#3BC4A3", "#FFC83D", "#5B6CFF"],
+      "materials": ["rejilla de píxeles", "paleta indexada con número", "celdas de frame"],
+      "viewport": "Cabecera como tira de frames 00 a 08 con la sesión actual encendida; debajo, la columna de lectura calma con las 4 jugadas de la sesión.",
+      "risk": "Si los píxeles invaden el texto, se vuelve disfraz retro; la rejilla vive solo en el marco.",
+      "raised": [
+        {"from": "rw-botteghe-quarterly-interior", "raise": "Paleta cerrada de 6 tintas con índice; nada fuera de ella, ni en código ni en quices."},
+        {"from": "posters-covers-sleeves-plakatstil-object-poster", "raise": "Movimiento por cortes duros (steps), nunca fundidos; la rejilla se reacomoda en celdas enteras."},
+        {"from": "operate-a-cutting-bench-select-rail", "raise": "El estado es una marca, no un color: frame visto, frame actual y 'aquí te quedaste' guardado en el riel."}
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick", "kind": "pick", "label": "Manual de instrucciones", "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Folletos de juego de cartucho: controles, personajes, cómo jugar",
+      "thesis": "Cada sesión es una página del manual: 'Cómo jugar', diagramas del control y recuadros de consejo.",
+      "palette": ["#F2EEE3", "#141414", "#D7262E", "#2F5FD0"],
+      "materials": ["papel couché", "diagramas de control", "recuadros de consejo"],
+      "viewport": "Portada de manual con el título del curso, índice numerado de páginas y la sesión actual como página abierta.",
+      "risk": "Es la dirección más familiar para un curso de videojuegos; puede sentirse nostálgica.",
+      "html": ".impeccable/mocks/decision/model-pick.html"
+    },
+    {"id": "c1", "kind": "challenger", "catalogId": "rw-botteghe-quarterly-interior", "label": "Quarterly literario", "verdict": "declined",
+      "lineage": "Revista literaria italiana", "thesis": "Hojas crema sobre fondo azul con un numeral bermellón gigante.", "palette": ["#1F3A93", "#F3EBD8", "#1A1A1A", "#E34234"],
+      "materials": ["papel verjurado", "luz rasante"], "viewport": "Hojas sobre la mesa azul.", "risk": "Ajeno al mundo de los juegos.",
+      "case": "Pierde en identificación del estudiante y en claridad.", "kept": "La disciplina de paleta cerrada."},
+    {"id": "c2", "kind": "challenger", "catalogId": "posters-covers-sleeves-plakatstil-object-poster", "label": "Pared de carteles", "verdict": "declined",
+      "lineage": "Plakatstil berlinés", "thesis": "Cada sesión un cartel con fondo saturado y un objeto plano.", "palette": ["#7A1F1F", "#D9A521", "#4F6B3A", "#3E4A59"],
+      "materials": ["tinta plana", "alfabeto propio"], "viewport": "Muro de pliegos.", "risk": "Cartel antes que documento.",
+      "case": "Gana algo en impacto, pierde en lectura.", "kept": "Cortes duros entre estados, celdas enteras."},
+    {"id": "c3", "kind": "challenger", "catalogId": "operate-a-cutting-bench-select-rail", "label": "Mesa de corte", "verdict": "declined",
+      "lineage": "Mesa de montaje de cine", "thesis": "Riel perforado con bandera donde te detuviste.", "palette": ["#000000", "#FF7A1A", "#FFFFFF"],
+      "materials": ["grano de película", "cinta"], "viewport": "Riel de frames.", "risk": "Lenguaje de herramienta, no de lectura.",
+      "case": "Pierde en identificación; es interfaz de editor.", "kept": "Estado como marca y 'aquí te quedaste' persistente."},
+    {"id": "c4", "kind": "challenger", "catalogId": "operate-b-struck-cathode-gauze", "label": "Tubo nixie", "verdict": "declined",
+      "lineage": "Contadores de cátodo", "thesis": "Todas las opciones presentes como fantasmas, una encendida.", "palette": ["#0B1020", "#FF7B2E"],
+      "materials": ["malla de bronce"], "viewport": "Numerales apilados.", "risk": "Oscuro y de nicho.", "case": "Pierde en ambos ejes.", "kept": "Vocabulario de estados claro para el quiz."},
+    {"id": "c5", "kind": "challenger", "catalogId": "paper-folds-pleats-deployable-curved-crease-shell", "label": "Pliegue curvo", "verdict": "declined",
+      "lineage": "Papel plegado", "thesis": "Un arco que da rigidez.", "palette": ["#F1EADB", "#2B2B2B"], "materials": ["papel algodón"], "viewport": "Disco plegado.", "risk": "Sin relación con el curso.", "case": "Pierde en ambos ejes.", "kept": "Vistas registradas plano/sección."},
+    {"id": "c6", "kind": "challenger", "catalogId": "kinetic-sculpture-automata-tensegrity-breathing-column", "label": "Columna tensegrity", "verdict": "declined",
+      "lineage": "Escultura cinética", "thesis": "Fuerzas opuestas visibles.", "palette": ["#1A1A1A", "#E8E4DC", "#D2302C"], "materials": ["varillas", "cuerda roja"], "viewport": "Columna.", "risk": "Abstracto.", "case": "Pierde en ambos ejes.", "kept": "Etiquetas fijadas a nodos con líneas guía."}
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {"kind": "canon", "label": "El estándar de cursos en línea", "thesis": "Plataforma de curso limpia: barra lateral de módulos, tarjetas y botones azules.",
+    "palette": ["#FFFFFF", "#111827", "#2563EB"], "materials": ["rejilla limpia", "tarjetas"], "viewport": "Barra lateral de sesiones y tarjeta de la sesión actual.", "risk": "Indistinguible de cualquier LMS.", "html": ".impeccable/mocks/decision/canon.html"},
+  "steer": true
+}

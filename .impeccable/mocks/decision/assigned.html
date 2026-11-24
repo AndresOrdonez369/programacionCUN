@@ -1,0 +1,53 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Atkinson+Hyperlegible+Next:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:#F4F1E8;color:#1B1A2E;font-family:'Atkinson Hyperlegible Next',sans-serif}
+.top{background:#1B1A2E;color:#F4F1E8;background-image:linear-gradient(#2a2944 1px,transparent 1px),linear-gradient(90deg,#2a2944 1px,transparent 1px);background-size:8px 8px;padding:22px 64px 0}
+.bar{display:flex;justify-content:space-between;font-family:Silkscreen;font-size:14px;letter-spacing:.06em}
+.bar nav span{margin-left:28px;opacity:.8}
+h1{font-family:'Bricolage Grotesque';font-weight:800;font-size:76px;line-height:.95;margin:36px 0 10px;letter-spacing:-.02em}
+.lede{font-size:21px;max-width:720px;opacity:.85}
+.pal{display:flex;gap:6px;margin:22px 0}
+.pal i{width:28px;height:28px;display:block;position:relative}
+.pal i:after{content:attr(data-n);position:absolute;bottom:-16px;left:0;font:10px Silkscreen;color:#F4F1E8;opacity:.6}
+.strip{display:grid;grid-template-columns:repeat(9,1fr);gap:0;margin-top:44px;border-top:2px solid #F4F1E8}
+.f{border-right:2px solid #F4F1E8;padding:14px 12px 18px;height:132px;position:relative}
+.f:first-child{border-left:2px solid #F4F1E8}
+.f b{font:22px Silkscreen;display:block}
+.f span{font-size:14px;display:block;margin-top:8px;opacity:.85}
+.f.done:after{content:'';position:absolute;right:10px;top:12px;width:10px;height:10px;background:#3BC4A3}
+.f.on{background:#FF5D3A;color:#1B1A2E}
+.f.on span{opacity:1;font-weight:700}
+main{display:grid;grid-template-columns:1fr 360px;gap:64px;padding:44px 64px}
+h2{font-family:'Bricolage Grotesque';font-size:36px;margin-bottom:8px}
+.q{font-size:20px;max-width:660px;margin-bottom:24px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.s{border:2px solid #1B1A2E;padding:14px;background:#fff}
+.s small{font:12px Silkscreen;display:block;margin-bottom:8px}
+.s h3{font-size:18px}
+.s.a{box-shadow:6px 6px 0 #FFC83D}.s.b{box-shadow:6px 6px 0 #FF5D3A}.s.c{box-shadow:6px 6px 0 #3BC4A3}.s.d{box-shadow:6px 6px 0 #5B6CFF}
+aside{border-left:2px solid #1B1A2E;padding-left:28px}
+aside h4{font:14px Silkscreen;margin-bottom:12px}
+aside p{font-size:16px;margin-bottom:10px}
+</style></head><body>
+<div class="top"><div class="bar"><span>PROG·VJ / CUN</span><nav><span>Curso</span><span>Módulo 0</span><span>Evaluación</span><span>Proyectos</span></nav></div>
+<h1>Programación de Videojuegos</h1>
+<p class="lede">Aprende a pensar como programador y llévalo a juegos reales en Lua y LÖVE: del game loop a las colisiones.</p>
+<div class="pal"><i style="background:#1B1A2E;outline:1px solid #555" data-n="0"></i><i style="background:#F4F1E8" data-n="1"></i><i style="background:#FF5D3A" data-n="2"></i><i style="background:#3BC4A3" data-n="3"></i><i style="background:#FFC83D" data-n="4"></i><i style="background:#5B6CFF" data-n="5"></i></div>
+<div class="strip">
+<div class="f done"><b>00</b><span>Pensar como programador</span></div>
+<div class="f done"><b>01</b><span>Lógica y mecánicas</span></div>
+<div class="f on"><b>02</b><span>Game loop y estado</span></div>
+<div class="f"><b>03</b><span>POO y arquitectura</span></div>
+<div class="f"><b>04</b><span>Lua y LÖVE</span></div>
+<div class="f"><b>05</b><span>POO en Lua</span></div>
+<div class="f"><b>06</b><span>Figuras y colisiones</span></div>
+<div class="f"><b>07</b><span>Breakout</span></div>
+<div class="f"><b>08</b><span>Demos y cierre</span></div>
+</div></div>
+<main><div><h2>Sesión 2 · Game loop, tiempo y estado</h2>
+<p class="q">¿Cómo hace un juego para moverse igual en un computador lento y en uno rápido?</p>
+<div class="steps"><div class="s a"><small>1 · Antes</small><h3>Quiz preclase</h3></div><div class="s b"><small>2 · En clase</small><h3>Slides interactivas</h3></div><div class="s c"><small>3 · Practica</small><h3>Código Lua</h3></div><div class="s d"><small>4 · Al cerrar</small><h3>Quiz postclase</h3></div></div></div>
+<aside><h4>Frame 02 de 08</h4><p>Corte I · Quiz/Parcial 30 %</p><p>Analogía: el flipbook. Cada página es un frame; dt es cuánto pasó entre páginas.</p></aside></main>
+</body></html>

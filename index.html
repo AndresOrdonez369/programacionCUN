@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400&family=JetBrains+Mono:wght@400..700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<title>Programación de Videojuegos · CUN</title>
+<meta name="description" content="Curso de Programación de Videojuegos (CUN): Módulo 0 de pensamiento computacional y 8 sesiones con slides interactivas, código en Lua y LÖVE, quiz preclase y postclase.">
+</head>
+<body data-page="hub">
+<header class="mast" id="mast"></header>
+<main>
+  <section class="wrap" id="semana" aria-live="polite"></section>
+
+  <section class="wrap">
+    <h2 id="frames">Los 9 frames del curso</h2>
+    <p style="max-width:68ch">Empiezas por el Módulo 0, a tu ritmo: aprender a pensar como programador antes de escribir una línea. Después, ocho sesiones en vivo. Cada una responde una sola pregunta y usa la anterior.</p>
+    <ol class="frames" id="frames-list"></ol>
+  </section>
+
+  <section class="wrap">
+    <h2 id="ritual">Cómo se estudia cada sesión</h2>
+    <p style="max-width:68ch">Siempre los mismos cuatro pasos. El quiz preclase y el postclase miden las mismas ideas clave, así ves cuánto avanzaste. Ninguno de los dos da nota.</p>
+    <div class="tblwrap"><table class="tbl">
+      <thead><tr><th>Paso</th><th>Cuándo</th><th>Qué haces</th></tr></thead>
+      <tbody>
+        <tr><td>1 · Quiz preclase</td><td>Antes de la sesión</td><td>6 preguntas cortas. Equivocarte aquí no resta: te dice en qué fijarte.</td></tr>
+        <tr><td>2 · Slides interactivas</td><td>En la sesión (y para repasar)</td><td>Analogías, demos que mueves tú, preguntas para predecir antes de ver la respuesta.</td></tr>
+        <tr><td>3 · Código y guía</td><td>En el taller y en casa</td><td>Cada idea en pseudocódigo y en Lua. Los fragmentos marcados se ejecutan en el navegador.</td></tr>
+        <tr><td>4 · Quiz postclase</td><td>Al cerrar la sesión</td><td>8 preguntas sobre las mismas ideas, con tu ganancia idea por idea.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="wrap">
+    <h2 id="evaluacion">Cómo se evalúa</h2>
+    <p style="max-width:68ch">Tres cortes. Las fechas exactas de apertura y cierre las publica la CUN para cada cohorte en el calendario académico y en C Digital.</p>
+    <div class="tblwrap"><table class="tbl">
+      <thead><tr><th>Corte</th><th>Qué se evalúa</th><th>Sesiones</th><th>Peso</th></tr></thead>
+      <tbody id="eval-body"></tbody>
+    </table></div>
+    <p style="max-width:68ch;margin-top:1rem">Los dos ACA son <b>un solo proyecto en dos tiempos</b>: en el ACA 1 diseñas la arquitectura orientada a objetos de un Breakout (UML, máquina de estados, pseudocódigo y esqueleto en Lua); en el ACA 2 lo implementas jugable en LÖVE con colisiones, estados y niveles.</p>
+  </section>
+
+  <section class="wrap">
+    <h2 id="proyectos">Proyectos del curso</h2>
+    <ul class="docs" id="proy-list"></ul>
+    <h3>Herramientas</h3>
+    <p style="max-width:68ch"><a href="https://love2d.org" target="_blank" rel="noopener">LÖVE 11.x</a> (gratis, Windows, macOS y Linux) y <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a> con la extensión de Lua. Las instrucciones paso a paso están en la sesión 4. Para el Módulo 0 no necesitas instalar nada.</p>
+  </section>
+</main>
+<div id="foot"></div>
+<script src="data/curso.js"></script>
+<script src="assets/fig.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

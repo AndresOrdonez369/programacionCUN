@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T22:30:00-05:00",
+  "title": "Design System: Programación de Videojuegos · CUN",
+  "extensions": {
+    "colorMeta": {
+      "tinta": { "role": "neutral", "displayName": "Tinta índice 0", "canonical": "#1B1A2E", "cssVar": "--c0", "tonalRamp": ["#1D1C31", "#323055", "#474479", "#5C589C", "#7F7DB5", "#A6A4CB", "#CCCBE2", "#EFEFF6"] },
+      "tinta-2": { "role": "neutral", "displayName": "Tinta 2", "canonical": "#262542", "cssVar": "--c0-2" },
+      "tinta-3": { "role": "neutral", "displayName": "Tinta 3", "canonical": "#34325A", "cssVar": "--c0-3" },
+      "tinta-suave": { "role": "neutral", "displayName": "Tinta suave", "canonical": "#8E8BA8", "cssVar": "--c0-soft" },
+      "papel": { "role": "neutral", "displayName": "Papel índice 1", "canonical": "#F4F1E8", "cssVar": "--c1", "tonalRamp": ["#342D19", "#5A4E2B", "#806F3D", "#A6904F", "#BDAB75", "#D1C49E", "#E5DDC8", "#F7F4EE"] },
+      "papel-2": { "role": "neutral", "displayName": "Papel 2", "canonical": "#EBE7DA", "cssVar": "--c1-2" },
+      "papel-3": { "role": "neutral", "displayName": "Papel 3", "canonical": "#DFDACB", "cssVar": "--c1-3" },
+      "texto-2": { "role": "neutral", "displayName": "Texto 2", "canonical": "#4A4862", "cssVar": "--ink-2" },
+      "texto-3": { "role": "neutral", "displayName": "Texto 3", "canonical": "#6A6782", "cssVar": "--ink-3" },
+      "coral": { "role": "primary", "displayName": "Coral índice 2", "canonical": "#FF5D3A", "cssVar": "--c2", "tonalRamp": ["#4C0E00", "#851800", "#BD2200", "#F52B00", "#FF5733", "#FF8A70", "#FFBCAD", "#FFEAE5"] },
+      "coral-tx": { "role": "primary", "displayName": "Coral de texto", "canonical": "#B8361A", "cssVar": "--c2-tx" },
+      "ambar": { "role": "secondary", "displayName": "Ámbar índice 4", "canonical": "#FFC83D", "cssVar": "--c4", "tonalRamp": ["#4C3700", "#855F00", "#BD8700", "#F5AF00", "#FFC533", "#FFD770", "#FFE8AD", "#FFF8E5"] },
+      "ambar-tx": { "role": "secondary", "displayName": "Ámbar de texto", "canonical": "#7A5600", "cssVar": "--c4-tx" },
+      "menta": { "role": "secondary", "displayName": "Menta índice 3", "canonical": "#3BC4A3", "cssVar": "--c3", "tonalRamp": ["#123B31", "#1F6655", "#2C9179", "#39BC9C", "#62D0B5", "#91DECB", "#C0ECE2", "#EBF9F6"] },
+      "menta-tx": { "role": "secondary", "displayName": "Menta de texto", "canonical": "#0E6E59", "cssVar": "--c3-tx" },
+      "azul": { "role": "tertiary", "displayName": "Azul índice 5", "canonical": "#5B6CFF", "cssVar": "--c5", "tonalRamp": ["#00084C", "#000E85", "#0014BD", "#0019F5", "#3348FF", "#707FFF", "#ADB6FF", "#E5E8FF"] },
+      "azul-tx": { "role": "tertiary", "displayName": "Azul de texto", "canonical": "#3343D6", "cssVar": "--c5-tx" },
+      "fondo-proyector": { "role": "neutral", "displayName": "Fondo de proyector", "canonical": "#100F20" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Título del hub; en páginas internas clamp(2.1rem, 5vw, 3.9rem)." },
+      "headline": { "displayName": "Headline", "purpose": "Títulos de sección." },
+      "title": { "displayName": "Title", "purpose": "Subtítulos, nombres de tarjetas, conceptos y proyectos." },
+      "body": { "displayName": "Body", "purpose": "Lectura; prosa a 72ch, párrafos del hub a 68ch." },
+      "label": { "displayName": "Label pixel", "purpose": "Marca, navegación, cabeceras de tabla, pestañas, número de frame. Silkscreen en múltiplos de 8px." },
+      "label-micro": { "displayName": "Label micro", "purpose": "Corte bajo cada frame, estado de tarjeta, tipo de sesión, pie de documentos (8px)." },
+      "mono": { "displayName": "Mono", "purpose": "Código y cifras tabulares." },
+      "slide-title": { "displayName": "Título de slide", "purpose": "h1 dentro del lienzo de 1600x900; portada a 104px." },
+      "slide-body": { "displayName": "Cuerpo de slide", "purpose": "Texto base del lienzo de 1600x900." }
+    },
+    "shadows": [
+      { "name": "celda-baja", "value": "4px 4px 0 var(--c0)", "purpose": "Botones, notas, cajas de código; la tinta cambia según el significado (ámbar nota, coral advertencia, menta código bueno, azul pregunta). Sobre tinta la sombra es papel." },
+      { "name": "celda-alta", "value": "6px 6px 0 var(--k, var(--c4))", "purpose": "Tarjetas de jugada, puntuación e intro del quiz, idea clave y pregunta en slides, notas del docente." },
+      { "name": "hover-boton", "value": "6px 6px 0 var(--c0)", "purpose": "Botón al pasar, con translate(-2px, -2px)." },
+      { "name": "hover-tarjeta", "value": "8px 8px 0 var(--k, var(--c4))", "purpose": "Tarjeta de jugada al pasar, con translate(-2px, -2px)." },
+      { "name": "pulsado", "value": "0 0 0 var(--c0)", "purpose": "Botón pulsado, con translate(4px, 4px): cae sobre su sombra." },
+      { "name": "tecla", "value": "0 3px 0 var(--c1)", "purpose": "Rótulo de tecla en slides." }
+    ],
+    "motion": [
+      { "name": "salto-celda", "value": "transform .08s steps(1), box-shadow .08s steps(1)", "purpose": "Hover y pulsado de botones, tarjetas y opciones: salto, no deslizamiento." },
+      { "name": "corte", "value": "background 0s", "purpose": "Hover de la tira de frames: corte inmediato." },
+      { "name": "salto-sprite", "value": "salto .24s steps(3) both", "purpose": "Cuadrado marcador del título al entrar a cada slide." },
+      { "name": "trazo", "value": "dibuja .5s .1s steps(6) backwards", "purpose": "Cables de figuras que se dibujan." },
+      { "name": "flecha-mapa", "value": "clip-path .4s steps(5)", "purpose": "Flecha punteada del mapa de analogía al revelarse." },
+      { "name": "progreso", "value": "width .2s steps(4)", "purpose": "Barra coral de progreso de las slides." },
+      { "name": "reducido", "value": "prefers-reduced-motion: animation none, transition none", "purpose": "Apaga todo movimiento; también la clase sin-anim en slides." }
+    ],
+    "breakpoints": [
+      { "name": "movil", "value": "560px" },
+      { "name": "grafo", "value": "640px" },
+      { "name": "slides-flujo", "value": "760px" },
+      { "name": "tableta", "value": "1020px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón primario",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Celda ámbar con filete de tinta y sombra dura; sube al pasar y se hunde al pulsar.",
+      "html": "<button class=\"ds-btn\">Empezar quiz <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 10px; font: 700 1rem/1 var(--body, 'Atkinson Hyperlegible Next', sans-serif); padding: 13px 18px; background: var(--c4, #FFC83D); color: var(--c0, #1B1A2E); border: 2px solid var(--c0, #1B1A2E); border-radius: 0; cursor: pointer; box-shadow: 4px 4px 0 var(--c0, #1B1A2E); transition: transform .08s steps(1), box-shadow .08s steps(1); } .ds-btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--c0, #1B1A2E); } .ds-btn:active { transform: translate(4px, 4px); box-shadow: 0 0 0 var(--c0, #1B1A2E); } .ds-btn:focus-visible { outline: 3px solid var(--c5, #5B6CFF); outline-offset: 2px; }"
+    },
+    {
+      "name": "Botón ir",
+      "kind": "button",
+      "refersTo": "button-go",
+      "description": "Variante coral para la acción de avance principal.",
+      "html": "<button class=\"ds-btn-go\">Siguiente</button>",
+      "css": ".ds-btn-go { font: 700 1rem/1 var(--body, 'Atkinson Hyperlegible Next', sans-serif); padding: 13px 18px; background: var(--c2, #FF5D3A); color: var(--c0, #1B1A2E); border: 2px solid var(--c0, #1B1A2E); border-radius: 0; cursor: pointer; box-shadow: 4px 4px 0 var(--c0, #1B1A2E); transition: transform .08s steps(1), box-shadow .08s steps(1); } .ds-btn-go:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--c0, #1B1A2E); } .ds-btn-go:active { transform: translate(4px, 4px); box-shadow: none; } .ds-btn-go:focus-visible { outline: 3px solid var(--c5, #5B6CFF); outline-offset: 2px; }"
+    },
+    {
+      "name": "Botón alterno",
+      "kind": "button",
+      "refersTo": "button-alt",
+      "description": "Variante en papel para acciones secundarias.",
+      "html": "<button class=\"ds-btn-alt\">Abrir sesión</button>",
+      "css": ".ds-btn-alt { font: 700 1rem/1 var(--body, 'Atkinson Hyperlegible Next', sans-serif); padding: 13px 18px; background: var(--c1, #F4F1E8); color: var(--c0, #1B1A2E); border: 2px solid var(--c0, #1B1A2E); border-radius: 0; cursor: pointer; box-shadow: 4px 4px 0 var(--c0, #1B1A2E); transition: transform .08s steps(1), box-shadow .08s steps(1); } .ds-btn-alt:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--c0, #1B1A2E); } .ds-btn-alt:active { transform: translate(4px, 4px); box-shadow: none; } .ds-btn-alt:focus-visible { outline: 3px solid var(--c5, #5B6CFF); outline-offset: 2px; }"
+    },
+    {
+      "name": "Tira de frames",
+      "kind": "nav",
+      "refersTo": "frame-cell",
+      "description": "Nueve celdas 00 a 08 sobre tinta; celda coral = frame abierto, píxel menta = cerrado, píxel ámbar = aquí te quedaste.",
+      "html": "<ol class=\"ds-tira\"><li><a href=\"#\" class=\"ds-visto\"><span class=\"ds-n\">00</span><span class=\"ds-t\">Pensar como programador</span><span class=\"ds-k\">autónomo</span></a></li><li><a href=\"#\" aria-current=\"true\"><span class=\"ds-n\">01</span><span class=\"ds-t\">El bucle de juego</span><span class=\"ds-k\">Corte I</span></a></li><li><a href=\"#\" class=\"ds-aqui\"><span class=\"ds-n\">02</span><span class=\"ds-t\">Estado</span><span class=\"ds-k\">Corte I</span></a></li></ol>",
+      "css": ".ds-tira { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; background: #1B1A2E; border-top: 2px solid #F4F1E8; } .ds-tira li { border-right: 2px solid #F4F1E8; } .ds-tira li:first-child { border-left: 2px solid #F4F1E8; } .ds-tira a { display: block; min-height: 104px; padding: 12px 12px 16px; color: #F4F1E8; text-decoration: none; position: relative; transition: background 0s; } .ds-tira a:hover { background: #262542; } .ds-tira a:focus-visible { outline: 3px solid #5B6CFF; outline-offset: -3px; } .ds-tira a[aria-current] { background: #FF5D3A; color: #1B1A2E; } .ds-n { display: block; font: 400 1.35rem/1 'Silkscreen', monospace; } .ds-t { display: block; margin-top: 10px; font: 400 .9rem/1.25 'Atkinson Hyperlegible Next', sans-serif; } .ds-k { display: block; margin-top: 8px; font: 400 .5rem/1 'Silkscreen', monospace; color: #8E8BA8; } .ds-tira a[aria-current] .ds-k { color: #5A1E10; } .ds-visto::after { content: ''; position: absolute; right: 10px; top: 12px; width: 10px; height: 10px; background: #3BC4A3; } .ds-aqui::before { content: ''; position: absolute; right: 26px; top: 12px; width: 10px; height: 10px; background: #FFC83D; }"
+    },
+    {
+      "name": "Tarjeta de jugada",
+      "kind": "card",
+      "refersTo": "move-card",
+      "description": "Una de las cuatro jugadas de la sesión; sombra de celda alta en su tinta por orden.",
+      "html": "<a class=\"ds-jugada\" href=\"#\"><b>Quiz preclase</b><span>Antes de la sesión · 6 preguntas para saber de dónde partes.</span><small>hecho · 4/6</small></a>",
+      "css": ".ds-jugada { --k: #FFC83D; display: flex; flex-direction: column; max-width: 240px; background: #F4F1E8; border: 2px solid #1B1A2E; border-radius: 0; padding: 14px 14px 16px; color: #1B1A2E; text-decoration: none; box-shadow: 6px 6px 0 var(--k); transition: transform .08s steps(1), box-shadow .08s steps(1); } .ds-jugada:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--k); } .ds-jugada:focus-visible { outline: 3px solid #5B6CFF; outline-offset: 2px; } .ds-jugada b { font: 700 1.12rem/1.2 'Bricolage Grotesque', sans-serif; margin-bottom: 6px; } .ds-jugada span { font: 400 .92rem/1.4 'Atkinson Hyperlegible Next', sans-serif; color: #4A4862; } .ds-jugada small { margin-top: 12px; font: 400 .5rem/1 'Silkscreen', monospace; color: #0E6E59; }"
+    },
+    {
+      "name": "Etiqueta",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Etiqueta de entrega; coral para corte, ámbar para quiz.",
+      "html": "<span class=\"ds-tag\">Quiz Corte I</span> <span class=\"ds-tag ds-tag-c\">ACA 1</span>",
+      "css": ".ds-tag { display: inline-block; font: 700 .8rem/1.25 'Atkinson Hyperlegible Next', sans-serif; padding: 6px 8px; border: 2px solid #1B1A2E; border-radius: 0; background: #FFC83D; color: #1B1A2E; } .ds-tag-c { background: #FF5D3A; }"
+    },
+    {
+      "name": "Opción de quiz",
+      "kind": "input",
+      "refersTo": "quiz-option",
+      "description": "Respuesta de ancho completo con letra índice en celda de tinta; menta correcta, coral incorrecta.",
+      "html": "<button class=\"ds-opt\"><span class=\"ds-l\">A</span>El bucle se repite cada frame.</button><button class=\"ds-opt ds-ok\"><span class=\"ds-l\">B</span>Respuesta correcta.</button>",
+      "css": ".ds-opt { display: flex; gap: 12px; align-items: center; width: 100%; margin-bottom: 10px; text-align: left; font: 400 1rem/1.4 'Atkinson Hyperlegible Next', sans-serif; color: #1B1A2E; background: #F4F1E8; border: 2px solid #1B1A2E; border-radius: 0; padding: 12px 14px; cursor: pointer; transition: transform .08s steps(1), box-shadow .08s steps(1); } .ds-opt:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 #5B6CFF; } .ds-opt:focus-visible { outline: 3px solid #5B6CFF; outline-offset: 2px; } .ds-l { flex: none; width: 32px; height: 32px; display: grid; place-items: center; font: 400 1rem/1 'Silkscreen', monospace; background: #1B1A2E; color: #F4F1E8; } .ds-ok { background: #DDF5EE; border-color: #0E6E59; } .ds-ok .ds-l { background: #3BC4A3; color: #1B1A2E; }"
+    },
+    {
+      "name": "Caja de código",
+      "kind": "custom",
+      "refersTo": "codebox",
+      "description": "Código en tinta con pestañas pixel y sombra menta (coral si es código malo).",
+      "html": "<div class=\"ds-code\"><div class=\"ds-tabs\"><button aria-selected=\"true\">Lua</button><button aria-selected=\"false\">Pseudocódigo</button></div><pre>function love.update(dt)\n  x = x + 120 * dt\nend</pre></div>",
+      "css": ".ds-code { border: 2px solid #1B1A2E; background: #1B1A2E; border-radius: 0; box-shadow: 4px 4px 0 #3BC4A3; } .ds-tabs { display: flex; background: #262542; border-bottom: 2px solid #1B1A2E; } .ds-tabs button { font: 400 1rem/1 'Silkscreen', monospace; letter-spacing: .04em; color: #C9C5D8; background: none; border: 0; border-bottom: 3px solid transparent; padding: 12px 14px; cursor: pointer; } .ds-tabs button:hover { color: #F4F1E8; } .ds-tabs button:focus-visible { outline: 3px solid #5B6CFF; outline-offset: -3px; } .ds-tabs button[aria-selected='true'] { color: #F4F1E8; border-bottom-color: #3BC4A3; } .ds-code pre { margin: 0; padding: 16px 18px; color: #E9E6F2; font: 400 .9rem/1.6 'JetBrains Mono', monospace; }"
+    },
+    {
+      "name": "Panel de slide",
+      "kind": "card",
+      "refersTo": "slide-panel",
+      "description": "Panel en tinta-2 dentro del lienzo, con cabecera pixel en la tinta del tipo (azul por defecto, coral malo, menta bueno).",
+      "html": "<div class=\"ds-panel\"><h2>Idea</h2><p>Un juego es un bucle que lee, actualiza y dibuja.</p></div>",
+      "css": ".ds-panel { --tipo: #5B6CFF; background: #262542; border: 2px solid #34325A; border-radius: 0; padding: 0 20px 18px; color: #F4F1E8; font: 400 1rem/1.42 'Atkinson Hyperlegible Next', sans-serif; max-width: 420px; } .ds-panel h2 { margin: 0 -20px 12px; padding: 12px 20px; background: var(--tipo); color: #F4F1E8; font: 400 16px/1 'Silkscreen', monospace; letter-spacing: .03em; } .ds-panel p { margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "La hoja de sprites",
+    "overview": "Todo el curso es una sola hoja de sprites. El Módulo 0 y las sesiones 1 a 8 son los frames 00 a 08 de una misma animación, y cada superficie (hub, página de sesión, slides, quiz) se lee como una celda de esa hoja: cuadrícula de 8px, celdas cuadradas, filetes de 2px y una paleta cerrada de seis tintas numeradas, que se muestran con su índice como en un editor de pixel art.\n\nLa cabecera vive en tinta oscura sobre la rejilla de 8px; la lectura ocurre en papel. La fuente pixel (Silkscreen) es la voz de la máquina: números de frame, índices, rótulos cortos. Todo lo que se lee de verdad va en Atkinson Hyperlegible Next, porque muchos estudiantes nunca han programado y el texto no puede intimidar. El movimiento es de sprite: saltos por pasos (`steps()`) y cortes duros, nunca fundidos. El estado es una marca, no un cambio de tono: un píxel menta para lo cerrado, una celda coral para lo abierto.\n\nEl sistema rechaza el LMS de barra lateral con tarjetas redondeadas y el disfraz arcade de neón. La densidad es media: secciones amplias en papel, celdas compactas dentro de la tira y de las tablas.",
+    "keyCharacteristics": [
+      "Paleta indexada de seis tintas (0 a 5) más pasos derivados de la misma tinta; nada fuera de ella.",
+      "Esquinas siempre rectas; filetes de 2px en tinta (o en papel sobre tinta).",
+      "Sombras duras desplazadas, sin desenfoque, en una tinta de la paleta.",
+      "Tira de frames 00 a 08 como navegación y como mapa de progreso.",
+      "Movimiento por pasos y cortes duros; `prefers-reduced-motion` lo apaga todo.",
+      "Lienzo de slides fijo de 1600x900 escalado; en pantallas de menos de 760px pasa a lectura en columna."
+    ],
+    "rules": [
+      { "name": "The Six Inks Rule", "body": "Ningún color nuevo: todo valor es una de las seis tintas o un paso derivado de la misma tinta (más clara, más oscura o con transparencia). Si un tono no se puede nombrar por su índice, no entra.", "section": "colors" },
+      { "name": "The Mark Not Hue Rule", "body": "El estado se marca con una forma, no con un matiz: celda coral para el frame abierto, cuadrado menta de 10px para lo ya cerrado, cuadrado ámbar de 10px para \"aquí te quedaste\". Siempre con leyenda visible.", "section": "colors" },
+      { "name": "The Darkened Ink Rule", "body": "Sobre papel, el texto en color usa el paso `-tx` (coral-tx, menta-tx, azul-tx, ambar-tx); la tinta plena queda para rellenos, marcas y sombras.", "section": "colors" },
+      { "name": "The Pixel Grid Type Rule", "body": "Silkscreen se dibuja en múltiplos de 8px (8, 16, 24, 32) para que cada píxel caiga entero. Deuda conocida: la implementación aún usa tamaños fuera de la rejilla (1.35rem en la tira, 0.6 a 0.78rem en pistas, pie y barra de slides; 15, 18, 20 y 22px en el lienzo; 11 a 14px en el modo flujo). Corregirlos hacia 8, 16, 24 o 32 cuando se toquen; no copiarlos.", "section": "typography" },
+      { "name": "The Machine Voice Rule", "body": "Silkscreen sólo para números de frame, índices y rótulos de dos o tres palabras. Nunca para oraciones, preguntas ni párrafos.", "section": "typography" },
+      { "name": "The Ink Shadow Rule", "body": "Una sombra es una celda desplazada de una tinta de la paleta, con desenfoque 0. La tinta de la sombra lleva significado: ámbar = nota o idea clave, coral = advertencia o código malo, menta = código bueno, azul = pregunta.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do usar sólo las seis tintas y sus pasos derivados; texto en color sobre papel siempre con el paso `-tx`.",
+      "Do mantener esquinas rectas (0px) y filetes de 2px en todo componente nuevo.",
+      "Do dar profundidad con sombras duras desplazadas (4px o 6px, desenfoque 0) en una tinta de la paleta, y hundir el botón al pulsar.",
+      "Do animar con `steps()` o cortes duros (0.08s a 0.5s) y apagar todo con `prefers-reduced-motion`.",
+      "Do marcar estado con cuadrados planos y celdas de color con leyenda, no con cambios sutiles de tono.",
+      "Do reservar Silkscreen para números, índices y rótulos cortos, en múltiplos de 8px.",
+      "Do dibujar íconos y figuras como SVG de trazo cuadrado o con el kit de figuras (fig.js), sobre tinta con rejilla."
+    ],
+    "donts": [
+      "Don't introducir radios, sombras con desenfoque, gradientes de luz ni brillos de neón.",
+      "Don't usar fundidos ni transiciones con curvas suaves; el movimiento salta por pasos.",
+      "Don't escribir párrafos, preguntas ni respuestas en Silkscreen; en botones sólo rótulos de una o dos palabras.",
+      "Don't añadir colores fuera de la paleta indexada, ni siquiera para estados o resaltado de sintaxis.",
+      "Don't construir la navegación como barra lateral de LMS con tarjetas redondeadas."
+    ]
+  }
+}
